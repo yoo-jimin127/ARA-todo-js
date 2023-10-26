@@ -15,7 +15,7 @@ function init() {
 function addToDo(event) {
     event.preventDefault(); // 기본적으로 실행하는 동작 막기
     let toDoValue = document.querySelector('input');
-    if (toDoValue !== '') {
+    if (toDoValue.value !== '') {
         console.log(toDoValue.value);
         addTask(toDoValue.value); // li태그로 실제 화면에 추가
         toDoValue.value = ''; // 값 초기화 (입력창 비워주기)
